@@ -1,0 +1,113 @@
+@import 'variable.scss';
+
+.optionContainer{
+    min-height: 150px;
+    width: 100%;
+    overflow: auto;
+
+    .searchBar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        input {
+            background: url(https://www.gstatic.com/images/icons/material/system/2x/search_grey600_24dp.png) right 8px center no-repeat;
+            background-size: 24px 24px;
+            padding-left: 16px;
+            padding-right: 40px;
+            width: 100%;
+            outline: none;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .closeBtn{
+            cursor: pointer;
+            background-color: $softWhiteColor;
+            display: inline-block;
+            border-radius: 0 5px 5px 0px;
+
+            svg{
+                width: 30px;
+                height: 30px;
+                padding: 4px;
+                fill: $errorColor;
+                position: relative;
+                right: 0;
+            }
+        }
+    }
+
+    .optionList{
+        width: 100%;
+        margin: 20px 0px;
+        ul{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .listItem{
+                flex-basis: 33.33%;
+                margin: 8px 0;
+                transition: all .2s ease-out;
+                display: inline-flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+
+                &:hover{
+                    transition: all .2s ease-in;
+                }
+
+                li{
+                    list-style: none;
+                    padding: 10px;
+                    font-size: 1.6em;
+                }
+
+                .icon{
+                    font-size: 18px;
+                }
+
+                .chosen{
+                    background-color: $secondaryColor !important;
+                }
+
+                .listItemContainer{
+                    display: inline-flex;
+                    background-color: $primaryColor;
+                    cursor: pointer;
+                    align-items: center;
+                    border-radius: 5px;
+                    padding: 2px 15px;
+                    transition: all .2s ease-out;
+
+                    
+                    &:hover{
+                        opacity: .8;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+@media only screen and (max-width: $sm){
+    .listItem{
+        flex-basis: 50% !important;
+    }
+    
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+@import 'variable.scss';
+
+.mainContainer{
+    font-size: 1.6em;
+
+    .clearContainer{
+        background-color: $backgroundSoftColor;
+        border-radius: 3px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 5px 0;
+        margin: 40px 0 10px 0;
+
+        h1{
+            color: $whiteColor;
+            background-color: $secondaryColor;
+            padding: 5px 30px;
+            border-radius: 0px 20px 20px 0px;
+        }
+        .clearBtn span{
+            color: $errorColor;
+            cursor: pointer;
+            font-weight: bold;
+            transition: opacity .1s ease-out;
+            margin-right: 20px;
+
+            &:hover{
+                opacity: .8;
+            }
+        }
+
+        & div{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 50px;
+        }
+    }
+
+    .translatorContainer{
+        background-color: $backgroundSoftColor;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        border-radius: 3px;
+
+        &> :first-child{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            div{
+                font-size: 1.2em;
+            }
+        }  
+
+        &> :last-child{
+            div{
+                margin: 5px 0;
+            }
+        }
+
+        &> div{
+            flex-basis: 100%;
+            padding: 10px 20px;
+            
+        }
+
+        .deleteBtn{
+            background-color: $errorColor;
+            
+            &:hover{
+                background-color: $softWhiteColor;
+                color: $errorColor;
+            }
+        }
+
+        .started{
+            color: $primaryColor;
+        }
+        .target{
+            color: $secondaryColor;
+        }
+
+    }
+}

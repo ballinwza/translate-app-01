@@ -1,0 +1,53 @@
+@import 'variable.scss';
+
+.textBoxContainer{
+    width: 100%;
+    .textArea{
+        position: relative;
+
+        .textBox{
+            resize: none;
+            border: none;
+            background-color: transparent;
+            padding: 18px;
+            height: 146px;
+            border-radius: 10px;
+            outline: none;
+            overflow: auto;
+            font-size: 2.8em;
+        }
+        
+        .textCount{
+            position: absolute;
+            bottom: 5px;
+            right: 20px;
+            font-size: 1.2em;
+        }
+    }
+}
+
+.inputContainer{
+    & textarea{
+        color: $softWhiteColor;
+    }
+}
+
+.outputContainer{
+    background-color: $primaryColor;
+    border-radius: 3px;
+    & textarea{
+        color: $backgroundSoftColor;
+
+        &::placeholder{
+            color: $backgroundSoftColor;
+        }
+    }
+}
+
+@media only screen and (max-width: $lg){
+    .textBoxContainer{
+        input{
+            border-radius: 5px;
+        }
+    }
+}

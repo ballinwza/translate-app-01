@@ -1,0 +1,23 @@
+@import 'variable.scss';
+
+.swapArrow{
+    display: flex;
+    svg{
+        width: 4em;
+        height: 4em;
+        fill: $primaryBlueColor;
+        background-color: $softWhiteColor;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: $lg){
+    .swapArrow{
+        margin: 40px 0;
+        
+        svg{
+            border-radius: 5px;
+            flex-basis: 100%;
+        }
+    }
+}

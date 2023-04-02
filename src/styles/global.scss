@@ -1,0 +1,89 @@
+@import 'variable.scss';
+
+*{
+    font-family: arial ,sans-serif;
+    color: $whiteColor;
+}
+
+body{
+    background-color: $backgroundColor;
+    height: 100vh;
+    font-size: 62.5%;
+    margin: 100px;
+}
+
+.btn{
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .1s ease-in;
+
+    &:hover{
+        transition: all .1s ease-out;
+    }
+}
+
+div, p, span{
+    user-select: none;
+}
+
+input{
+    border: 1px solid $softWhiteColor;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: $primaryColor;
+    font-size: 1.4em;
+    height: 40px;
+    background-color: transparent;
+    width: 100%;
+    padding: 0.5em 1.5em;
+    
+}
+.input-dropdown{
+    padding: 0.5em 1.5em;
+    font-size: 1.5em;
+    border-radius: 5px 0 0 5px;
+}
+.output-dropdown{
+    border-radius: 0;
+}
+
+.enterBtnContainer{
+    height: 100%;
+    display: flex;
+}
+
+@media only screen and (max-width: $lg){
+    body{
+        font-size: 50%;
+    }
+    .enterBtnContainer{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: $md){
+    body{
+        margin: 5%;
+        font-size: 40%;
+    }
+}
+
+@media only screen and (max-width: $sm){
+    body{
+        font-size: 35%;
+    }
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.67%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.32%;}
+.col-8{width: 66.65%;}
+.col-9{width: 74.98%;}
+.col-10{width: 83.31%;}
+.col-11{width: 91.64%;}
+.col-12{width: 100%;}

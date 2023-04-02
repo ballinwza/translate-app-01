@@ -1,0 +1,20 @@
+@import 'variable.scss';
+
+.enterBtn{
+    font-size: 2em;
+    background-color: $softWhiteColor;
+    color: $primaryBlueColor;
+    padding: 6.7px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+
+@media only screen and (max-width: $lg){
+    .enterBtn{
+        margin: 40px 0;
+        border-radius: 5px;
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
